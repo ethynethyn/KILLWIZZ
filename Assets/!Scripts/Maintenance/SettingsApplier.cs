@@ -12,7 +12,7 @@ public class SettingsApplier : MonoBehaviour
 
     void Awake()
     {
-        LoadPlayerPosition();
+        //LoadPlayerPosition();
         LoadPickupPositions();
 
         // Apply FOV
@@ -42,17 +42,19 @@ public class SettingsApplier : MonoBehaviour
             controller.RotationSpeed = savedSensitivity;
     }
 
-    void LoadPlayerPosition()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player && PlayerPrefs.HasKey("PlayerPosX"))
-        {
-            float x = PlayerPrefs.GetFloat("PlayerPosX");
-            float y = PlayerPrefs.GetFloat("PlayerPosY");
-            float z = PlayerPrefs.GetFloat("PlayerPosZ");
-            player.transform.position = new Vector3(x, y, z);
-        }
-    }
+    //Loading player position is not needed for this project
+
+    //void LoadPlayerPosition()
+    //{
+    //    GameObject player = GameObject.FindGameObjectWithTag("Player");
+    //    if (player && PlayerPrefs.HasKey("PlayerPosX"))
+    //    {
+    //        float x = PlayerPrefs.GetFloat("PlayerPosX");
+    //        float y = PlayerPrefs.GetFloat("PlayerPosY");
+    //        float z = PlayerPrefs.GetFloat("PlayerPosZ");
+    //        player.transform.position = new Vector3(x, y, z);
+    //    }
+    //}
 
     void LoadPickupPositions()
     {
