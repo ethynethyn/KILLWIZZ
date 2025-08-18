@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319784966999170389}
   serializedVersion: 2
-  m_LocalRotation: {x: -4.9105837e-15, y: 0.7071067, z: 0.7071069, w: -4.910585e-15}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5000001, y: 1.5, z: 1.5}
+  m_LocalRotation: {x: 0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: -1.94, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 905292317903329167}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -180}
 --- !u!33 &883075346341146865
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99,6 +99,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905292317903329167}
   - component: {fileID: 1422514845296216495}
+  - component: {fileID: 5483556797641978864}
   m_Layer: 0
   m_Name: Tree1LOD
   m_TagString: Untagged
@@ -130,22 +131,45 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7321872832623326403}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -2.7140572, y: 7.5363665, z: 0.37674809}
+  m_LocalReferencePoint: {x: -3.074057, y: 6.0737762, z: -5.2732515}
   m_Size: 16.045033
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.6
+  - screenRelativeHeight: 0.62967813
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 3d98addf317db0740a808b267ea63a94, type: 3}
+    - renderer: {fileID: 2117174051246518995}
   - screenRelativeHeight: 0.3
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 3d98addf317db0740a808b267ea63a94, type: 3}
+    - renderer: {fileID: 2117174051246518995}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 3d98addf317db0740a808b267ea63a94, type: 3}
+    - renderer: {fileID: 2117174051246518995}
   m_Enabled: 1
+--- !u!136 &5483556797641978864
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7321872832623326403}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.73
+  m_Height: 9
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.07, z: 0}

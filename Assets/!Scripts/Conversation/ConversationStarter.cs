@@ -5,6 +5,7 @@ public class ConversationStarter : MonoBehaviour
 {
     public GameObject interactionImage; // Drag your UI Image here in the Inspector
     public NPCConversation myConversation;
+    public GameObject interactionMessage;
 
     private bool playerInTrigger = false;
 
@@ -26,6 +27,7 @@ public class ConversationStarter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConversationManager.Instance.StartConversation(myConversation);
+                interactionMessage.SetActive(false);
             }
         }
         else
@@ -40,6 +42,7 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInTrigger = true;
+            interactionMessage.SetActive(true);
         }
     }
 
@@ -48,6 +51,8 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInTrigger = false;
+
+            interactionMessage.SetActive(false);
 
             if (ConversationManager.Instance != null &&
                 ConversationManager.Instance.IsConversationActive)
