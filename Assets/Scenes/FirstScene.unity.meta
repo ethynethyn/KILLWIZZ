@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/FirstScene.unity.meta
 guid: fdeee074a5f76f14281e6e88fa6e9055
+========
+guid: 04ed28e76e18148ba82a31d6579267f7
+>>>>>>>> main:Assets/Scenes/ELEVATOR_TEST 2.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
